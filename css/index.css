@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+body {
+    background: linear-gradient(#ECE9E6, #FFFFFF);
+}
+#container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+header {
+    padding: 25px 0;
+}
+header h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: "Fjalla One", sans-serif;
+    color: rgb(160, 58, 160);
+    margin-bottom: 40px;
+}
+header ul {
+    display: flex;
+    justify-content: space-between;
+}
+header ul li a {
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+}
+
+/* main_visual */
+.main_visual {
+    height: 70vh;
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+.main_visual .swiper-slide {
+    height: 100%;
+}
+.main_visual .swiper-slide img {
+    max-width: 100%;
+}
+
+/* main */
+main {
+    display: flex;
+    justify-content: space-between;
+}
+main section {
+    width: 70%;
+}
+main section article {
+    margin-bottom: 40px;
+}
+main section h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    font-family: "Fjalla One", sans-serif
+}
+main .text {
+    line-height: 1.6;
+}
+main .text > strong {
+    display: block;
+    margin-bottom: 10px;
+    color:rgb(160, 58, 160)
+}
+main article li {margin-bottom: 20px;}
+main article li strong {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+main article li p {
+    display: inline-block;
+}
+main aside {
+    width: 25%;
+}
+main aside figure {
+    overflow: hidden;
+    height: 180px;
+    margin-bottom: 20px;
+    position: relative;
+}
+main aside figure img {
+    width: 100%; height: 100%;
+}
+main aside figure:before {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(134, 125, 211, 0.8);
+    content: '';
+    transition: all 0.2s;
+    transform: scale(0);
+}
+main aside figure:hover:before {
+    transform: scale(1);
+}
+main aside figure span {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    transition: all 0.3s 0.3s;
+    opacity: 0; /* 투명도 */
+}
+main aside figure:hover span {
+    opacity: 1;
+}
+footer {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    background: rgba(59, 121, 238, 0.651);
+}

@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+body {
+    background: #b4afaf;
+}
+#wrap {
+    max-width: 1200px;
+    margin: 50px auto;
+    border: 1px solid rgba(0,0,0,0.4);
+    background: #fff;
+}
+.header {
+    margin: 0 auto;
+    max-width: 1200px;
+    background: url(/test_/img/greg-rakozy-oMpAz-DN-9I-unsplash.jpg)no-repeat center/cover;
+    height: 500px;
+    position: relative;
+}
+.title h1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-size: 44px;
+    font-weight: 700;
+    position: absolute;
+    top: 35%; left: 40%;
+    color: #fff;
+    text-align: center;
+}
+.nav {
+    max-width: 1200PX;
+}
+.nav ul {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 500px; left: 0;
+}
+.nav ul li {
+    max-width: 1200px;
+    text-align: center;
+    background: purple;
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+.nav ul li:hover {
+    background: gray;
+    border: 1px solid #000;
+}
+.nav ul li > a {
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+}
+
+/* header */
+
+.contents {
+    max-width: 1200px;
+    margin: 100px auto 100px;
+    display: flex;
+    justify-content: space-between;
+}
+.text_area {
+    max-width: 1200px;
+    width: 65%;
+    margin: 0 auto;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.text_area h2 {
+    font-size: 30px;
+    color: blue;
+    margin-bottom: 20px;
+}
+.text_area p > span {
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.text_area p {
+    margin-bottom: 15px;
+}
+.figure {
+    width: 30%;
+    padding: 30px;
+    box-sizing: border-box;
+}
+figure img {
+    width: 100%;
+}
+footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background: rgba(0,0,0,0.4);
+    box-sizing: border-box;
+}
